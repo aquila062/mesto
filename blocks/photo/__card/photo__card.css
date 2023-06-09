@@ -1,0 +1,5 @@
+.photo__card {
+  display: block;
+  background-color: #fff;
+  z-index: 1;
+}
