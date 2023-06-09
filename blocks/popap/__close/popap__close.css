@@ -11,7 +11,7 @@
   height: 32px;
   border: none;
   cursor: pointer;
-  transition: opacity 100ms ease-in-out; 
+  transition: opacity 100ms ease-in-out;
   align-self: flex-end;
 }
 .popap__close:hover {
