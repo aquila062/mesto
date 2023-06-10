@@ -17,3 +17,9 @@
     max-width: calc(100% - 38px);
   }
 }
+@media (min-width:320px) and (max-width:900px) {
+  .popap__container {
+    width: 282px;
+    height: 322px;
+  }
+}
