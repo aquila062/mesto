@@ -20,7 +20,7 @@
 .form__submit-button:hover {
   opacity: 0.8;
 }
-@media (max-width: 500px) {
+@media (max-width: 900px) {
     .form__submit-button {
         min-width: calc(100% - 44px);
         margin-top: 45px;
