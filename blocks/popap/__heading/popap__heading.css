@@ -10,7 +10,7 @@
   color: #000;
   min-width: 358px;
 }
-@media (max-width: 500px) {
+@media (max-width: 900px) {
     .popap__heading {
         min-width: calc(100% - 44px);
         margin-top: 25px;
