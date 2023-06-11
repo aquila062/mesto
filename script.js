@@ -1,38 +1,34 @@
-document.addEventListener('DOMContentLoaded', () => {
+const popUp = document .querySelector('.popap');
+const openPopUp = document.querySelector('.profile__edit-button');
+const closePopUp = document.querySelector('.popap__close');
+const savePopUp = document.querySelector('.form__submit-button');
+let formElement = document.querySelector('.form');
+let profileName = document.querySelector('.profile__name');
+let profileactivity = document.querySelector('.profile__position');
+let popUpName = document.querySelector('.form__input_value_name');
+let popUpActivity = document.querySelector('.form__input_value_position');
 
-  let myBtns=document.querySelectorAll('.card__like');
-  myBtns.forEach(function(btn) {
+openPopUp.addEventListener("click", () => {
+  popUp.classList.add('popap__open');
+  popUpName.value = profileName.textContent;
+  popUpActivity.value = profileactivity.textContent;
 
-      btn.addEventListener('click', () => {
-        btn.classList.add('card__like_active');
-      });
-  });
-});
-
-window.onload=function(){
-  // Открыть модальное окно
-document.getElementById("popap-open").addEventListener("click", function() {
-  document.getElementById("popap").classList.add("popap__open")
 })
 
-// Закрыть модальное окно
-document.getElementById("popap__close").addEventListener("click", function() {
-  document.getElementById("popap").classList.remove("popap__open")
+closePopUp.addEventListener('click', () => {
+popUp.classList.remove('popap__open');
+
 })
 
-// Закрыть модальное окно при нажатии на Esc
-window.addEventListener('keydown', (e) => {
-  if (e.key === "Escape") {
-      document.getElementById("popap").classList.remove("popap__open")
-  }
-});
+savePopUp.addEventListener("click", () => {
+  popUp.classList .remove('popap__open');
 
-// Закрыть модальное окно при клике вне его
-document.querySelector("#popap .popap__container").addEventListener('click', event => {
-  event._isClickWithInModal = true;
-});
-document.getElementById("popap").addEventListener('click', event => {
-  if (event._isClickWithInModal) return;
-  event.currentTarget.classList.remove('popap__open');
-});
-};
+})
+
+function handleFormSubmit(evt) {
+  evt.preventDefault();
+  profileName.textContent = popUpName.value;
+  profileactivity.textContent = popUpActivity.value;
+}
+
+formElement.addEventListener('submit', handleFormSubmit);
