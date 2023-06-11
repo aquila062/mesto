@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pages/index.css" type="text/css">
+  <title>Mesto</title>
+</head>
+
+<body class="page">
+
+  <header class="header">
+    <div class="header__logo"></div>
+  </header>
+
+  <main class="content">
+
+    <section class="profile">
+      <div class="profile__avatar-container">
+        <img class="profile__avatar" src="./images/Jacques.jpg" alt="Аватар">
+      </div>
+      <div class="profile__info">
+        <div class="profile__name-wrap">
+          <h1 class="profile__name">Жак-Ив Кусто</h1>
+          <button type="button" id="popap-open" class="profile__edit-button" aria-label="Кнопка редактирования профиля"></button>
+        </div>
+        <p class="profile__position">Исследователь океана</p>
+      </div>
+      <button type="button" class="profile__add-button" aria-label="Кнопка добавления фотографии"></button>
+    </section>
+
+    <section class="cards">
+      <ul class="cards__container">
+        <li class="card"><img class='card__image' src="./images/dombye.jpg" alt="Домбай">
+          <div class="card__info">
+            <h2 class="card__heading">Домбай</h2>
+            <div class="card__likes-container">
+              <button type="button" aria-label="Кнопка оценки фотографии" class="card__like"></button>
+            </div>
+          </div>
+        </li>
+        <li class="card"><img class='card__image' src="./images/karachayevsk.jpg" alt="Карачаево-Черкессия">
+          <div class="card__info">
+            <h2 class="card__heading">Карачаево-Черкессия</h2>
+            <div class="card__likes-container">
+              <button type="button" aria-label="Кнопка оценки фотографии" class="card__like"></button>
+            </div>
+          </div>
+        </li>
+        <li class="card"><img class='card__image' src="./images/Chechnya.jpg" alt="Чечня">
+          <div class="card__info">
+            <h2 class="card__heading">Чечня</h2>
+            <div class="card__likes-container">
+              <button type="button" aria-label="Кнопка оценки фотографии" class="card__like"></button>
+            </div>
+          </div>
+        </li>
+        <li class="card"><img class='card__image' src="./images/elbrus.png" alt="Эльбрус">
+          <div class="card__info">
+            <h2 class="card__heading">Эльбрус</h2>
+            <div class="card__likes-container">
+              <button type="button" aria-label="Кнопка оценки фотографии" class="card__like"></button>
+            </div>
+          </div>
+        </li>
+        <li class="card"><img class='card__image' src="./images/Chechnya.jpg" alt="Чечня">
+          <div class="card__info">
+            <h2 class="card__heading">Чечня</h2>
+            <div class="card__likes-container">
+              <button type="button" aria-label="Кнопка оценки фотографии" class="card__like"></button>
+            </div>
+          </div>
+        </li>
+        <li class="card"><img class='card__image' src="./images/karachayevsk.jpg" alt="Карачаево-Черкессия">
+          <div class="card__info">
+            <h2 class="card__heading">Карачаево</h2>
+            <div class="card__likes-container">
+              <button type="button" aria-label="Кнопка оценки фотографии" class="card__like"></button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
+  </footer>
+  
+  <div id="popup" class="popap">
+
+    <div class="popap__container">
+
+      <button type="button" id="popup__close" class="popap__close" aria-label="Кнопка закрытия окна редактирования профиля"></button>
+
+      <h3 class="popap__heading">Редактировать профиль</h3>
+
+      <form class="form" name="form">
+
+        <input type="text" id="input-name" class="form__input form__input_value_name" name="inputname" placeholder="Имя">
+        <input type="text" id="input-position"  class="form__input form__input_value_position"  name="inputPosition" placeholder="О себе"/>
+
+        <button type="submit" class="form__submit-button" aria-label="Кнопка сохранения изменений профиля">Сохранить</button>
+
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
