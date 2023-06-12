@@ -9,14 +9,14 @@ let popUpName = document.querySelector('.form__input_value_name');
 let popUpActivity = document.querySelector('.form__input_value_position');
 
 openPopUp.addEventListener("click", () => {
-  popUp.classList.add('popap__open');
+  popUp.classList.add('__active');
   popUpName.value = profileName.textContent;
   popUpActivity.value = profileactivity.textContent;
 
 })
 
 closePopUp.addEventListener('click', () => {
-popUp.classList.remove('popap__open');
+popUp.classList.remove('popap__active');
 
 })
 
@@ -25,7 +25,7 @@ function handleFormSubmit(evt) {
   profileName.textContent = popUpName.value;
   profileactivity.textContent = popUpActivity.value;
   savePopUp.addEventListener('click', () => {
-    popUp.classList.remove('popap__open');
+    popUp.classList.remove('__active');
   })
 }
 
