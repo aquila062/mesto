@@ -20,15 +20,13 @@ popUp.classList.remove('popap__open');
 
 })
 
-savePopUp.addEventListener("click", () => {
-  popUp.classList .remove('popap__open');
-
-})
-
 function handleFormSubmit(evt) {
   evt.preventDefault();
   profileName.textContent = popUpName.value;
   profileactivity.textContent = popUpActivity.value;
+  savePopUp.addEventListener('click', () => {
+    popUp.classList.remove('popap__open');
+  })
 }
 
 formElement.addEventListener('submit', handleFormSubmit);
