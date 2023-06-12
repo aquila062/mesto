@@ -1,0 +1,19 @@
+.form__input {
+  border: 0;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  box-sizing: border-box;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  margin: 0 0 36px 36px;
+  min-width: 358px;
+  padding: 0 0 13px;
+}
+@media (max-width: 900px) {
+    .form__input {
+        margin-left: 22px;
+        margin-right: 22px;
+        min-width: calc(100% - 44px);
+      }
+}

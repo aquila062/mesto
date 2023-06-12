@@ -1,0 +1,24 @@
+.profile {
+  display: flex;
+  margin: 40px 0 0;
+  padding: 0;
+  width: 100%;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 880px;
+}
+
+@media (min-width:350px) and (max-width:900px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 1.214;
+  }
+}
+
