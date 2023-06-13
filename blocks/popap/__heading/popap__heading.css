@@ -9,7 +9,7 @@
   line-height: 29px;
   color: #000;
   min-width: 358px;
-  font-family: Inter;
+  font-family: 'Inter', 'Arial', 'sans-serif';
 }
 @media (max-width: 900px) {
     .popap__heading {
