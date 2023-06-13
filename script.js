@@ -1,7 +1,6 @@
 const popUp = document .querySelector('.popap');
 const openPopUp = document.querySelector('.profile__edit-button');
 const closePopUp = document.querySelector('.popap__close');
-const savePopUp = document.querySelector('.form__submit-button');
 let formElement = document.querySelector('.form');
 let profileName = document.querySelector('.profile__name');
 let profileactivity = document.querySelector('.profile__position');
