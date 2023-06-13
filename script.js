@@ -24,9 +24,7 @@ function handleFormSubmit(evt) {
   evt.preventDefault();
   profileName.textContent = popUpName.value;
   profileactivity.textContent = popUpActivity.value;
-  savePopUp.addEventListener('click', () => {
-    popUp.classList.remove('popap__active');
-  })
+  popUp.classList.remove('popap__active');
 }
 
 formElement.addEventListener('submit', handleFormSubmit);
