@@ -31,5 +31,5 @@
 @import url('../blocks/profile/__info/profile__info.css');
 @import url('../blocks/profile/__name-wrap/profile__name-wrap.css');
 @import url('../blocks/profile/__name/profile__name.css');
-@import url('../blocks/popap/__opened/popap__opened.css');
+@import url('../blocks/popap/_opened/popap_opened.css');
 @import url('../blocks/profile/__position/profile__position.css');
